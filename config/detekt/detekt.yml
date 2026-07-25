@@ -1,0 +1,30 @@
+# Argos Detekt policy — strict defaults with documented, justified deviations.
+build:
+  maxIssues: 0
+
+complexity:
+  LongParameterList:
+    # Data-mapping code legitimately mirrors wide Argo DTO shapes.
+    functionThreshold: 8
+    constructorThreshold: 12
+    ignoreDefaultParameters: true
+  TooManyFunctions:
+    # ArgoSession legitimately orchestrates the full lifecycle (login/refresh/restore/
+    # persistence hooks + SessionContext bridge); splitting it would scatter state
+    # transitions across files and weaken the failure contract.
+    thresholdInFiles: 16
+    thresholdInClasses: 16
+
+style:
+  MagicNumber:
+    # Dates, durations and protocol constants read better inline than wrapped in consts everywhere.
+    active: false
+  MaxLineLength:
+    maxLineLength: 140
+  ThrowsCount:
+    max: 6
+
+naming:
+  TopLevelPropertyNaming:
+    # Domain objects like TOKEN_EXPIRY_SLACK keep top-level constants readable.
+    active: false

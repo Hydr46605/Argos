@@ -1,0 +1,8 @@
+# Normalize line endings across platforms; LF everywhere in-repo.
+* text=auto eol=lf
+
+# Binary artifacts
+*.jar binary
+*.png binary
+*.ico binary
+gradle/wrapper/gradle-wrapper.jar binary

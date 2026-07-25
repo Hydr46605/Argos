@@ -1,0 +1,44 @@
+# --- Gradle ---
+.gradle/
+build/
+buildSrc/build/
+dist/
+
+# --- Kotlin/JVM ---
+.kotlin/
+out/
+classes/
+
+# --- IDE ---
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+
+# --- Logs & dumps ---
+*.log
+hs_err_pid*
+replay_pid*
+
+# --- OS noise ---
+.DS_Store
+Thumbs.db
+
+# --- Security: never commit credentials or token stores ---
+.env
+*.env
+.argo/
+.argos/
+argos-token-store.bin
+*.pem
+*.jks
+credentials.json
+local-test.properties
+!local-test.properties.example
+
+# --- Reference clones kept out of history ---
+/portaleargo-api-reference/
