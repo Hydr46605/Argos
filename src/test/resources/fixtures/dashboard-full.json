@@ -1,0 +1,132 @@
+{
+  "success": true,
+  "msg": null,
+  "data": {
+    "dati": [
+      {
+        "mediaGenerale": "7.25",
+        "mediaPerMese": { "2026-03": "7.5", "2026-04": "7" },
+        "mediaPerPeriodo": {
+          "12345": {
+            "mediaGenerale": 7.25,
+            "listaMaterie": {
+              "MATEMATICA": { "mediaMateria": 7.25, "mediaScritta": 7.5, "mediaOrale": 7 },
+              "ITALIANO": { "mediaMateria": 6.5, "numVoti": 2 }
+            },
+            "mediaMese": { "2026-03": 7.5 }
+          }
+        },
+        "mediaMaterie": {
+          "MATEMATICA": { "mediaMateria": 7.25 },
+          "ITALIANO": { "mediaMateria": 6.5 }
+        },
+        "listaMaterie": [
+          { "materia": "MATEMATICA", "abbreviazione": "MATE", "codTipo": "S", "faMedia": true, "scrut": true },
+          { "materia": "ITALIANO", "codTipo": "O", "faMedia": true, "scrut": true }
+        ],
+        "listaPeriodi": [
+          {
+            "pkPeriodo": "12345",
+            "codPeriodo": "P1",
+            "descrizione": "Primo periodo",
+            "dataInizio": "2025-09-11",
+            "dataFine": "2026-01-31",
+            "votoUnico": false,
+            "isMediaScrutinio": false,
+            "isScrutinioFinale": false
+          },
+          {
+            "pkPeriodo": "67890",
+            "codPeriodo": "P2",
+            "descrizione": "Secondo periodo",
+            "dataInizio": "2026-02-01",
+            "dataFine": "2026-06-05",
+            "votoUnico": false,
+            "isScrutinioFinale": false
+          }
+        ],
+        "voti": [
+          {
+            "pk": "101",
+            "operazione": "I",
+            "datEvento": "2026-03-10 10:30:00",
+            "datGiorno": "2026-03-10",
+            "pkPeriodo": "12345",
+            "codCodice": "7.5",
+            "valore": 7.5,
+            "docente": "PROF ROSSI MARIO",
+            "pkDocente": "9001",
+            "pkMateria": "M1",
+            "desMateria": "MATEMATICA",
+            "tipoValutazione": "S",
+            "prgVoto": 1,
+            "descrizioneProva": "Verifica scritta",
+            "descrizioneVoto": "Discreto",
+            "codTipo": "S",
+            "mese": 3,
+            "numMedia": 7.5,
+            "faMenoMedia": "N"
+          },
+          {
+            "pk": "102",
+            "operazione": "I",
+            "datEvento": "2026-03-12 08:00:00",
+            "datGiorno": "2026-03-12",
+            "pkPeriodo": "12345",
+            "codCodice": "7",
+            "valore": 7,
+            "docente": "PROF ROSSI MARIO",
+            "pkMateria": "M1",
+            "desMateria": "MATEMATICA",
+            "mese": 3,
+            "faMenoMedia": "N"
+          }
+        ],
+        "bacheca": [
+          {
+            "pk": "201",
+            "operazione": "I",
+            "categoria": "CIRCOLARI",
+            "messaggio": "<p>Uscita didattica</p>",
+            "data": "2026-03-01 08:00:00",
+            "autore": "PROF BIANCHI",
+            "listaAllegati": []
+          }
+        ],
+        "bachecaAlunno": [],
+        "appello": [
+          {
+            "pk": "301",
+            "operazione": "I",
+            "codEvento": "A",
+            "daGiustificare": true,
+            "data": "2026-03-11 08:00:00",
+            "docente": "PROF ROSSI"
+          }
+        ],
+        "registro": [
+          {
+            "pk": "401",
+            "operazione": "I",
+            "datGiorno": "2026-03-11",
+            "ora": 1,
+            "materia": "MATEMATICA",
+            "docente": "PROF ROSSI MARIO",
+            "isFirmato": true,
+            "attivita": "Equazioni di secondo grado",
+            "compiti": [{ "compito": "Pag. 120 es. 4-6", "dataConsegna": "2026-03-13" }]
+          }
+        ],
+        "promemoria": [],
+        "fuoriClasse": [],
+        "prenotazioniAlunni": [],
+        "opzioni": [
+          { "chiave": "opz-vot_annuale", "valore": false }
+        ],
+        "msg": "ok",
+        "rimuoviDatiLocali": "false",
+        "ricaricaDati": "false"
+      }
+    ]
+  }
+}

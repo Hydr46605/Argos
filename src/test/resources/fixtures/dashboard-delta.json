@@ -1,0 +1,43 @@
+{
+  "success": true,
+  "msg": null,
+  "data": {
+    "dati": [
+      {
+        "mediaGenerale": "7.0",
+        "mediaPerMese": { "2026-03": "7.5" },
+        "mediaPerPeriodo": {},
+        "mediaMaterie": { "MATEMATICA": { "mediaMateria": 7.0 } },
+        "listaMaterie": [
+          { "materia": "MATEMATICA", "faMedia": true, "scrut": true }
+        ],
+        "listaPeriodi": [],
+        "voti": [
+          { "pk": "101", "operazione": "D" },
+          {
+            "pk": "103",
+            "operazione": "I",
+            "datEvento": "2026-03-15 09:00:00",
+            "datGiorno": "2026-03-15",
+            "pkPeriodo": "12345",
+            "codCodice": "6.5",
+            "valore": 6.5,
+            "desMateria": "MATEMATICA",
+            "mese": 3,
+            "faMenoMedia": "N"
+          }
+        ],
+        "bacheca": [],
+        "bachecaAlunno": [],
+        "appello": [],
+        "registro": [],
+        "promemoria": [],
+        "fuoriClasse": [],
+        "prenotazioniAlunni": [],
+        "opzioni": [],
+        "rimuoviDatiLocali": "false",
+        "ricaricaDati": "false"
+      }
+    ]
+  }
+}

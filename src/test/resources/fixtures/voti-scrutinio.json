@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "msg": null,
+  "data": {
+    "votiScrutinio": [
+      {
+        "pk": "SCR1",
+        "periodi": [
+          {
+            "desDescrizione": "Primo periodo",
+            "materie": ["MATEMATICA", "ITALIANO"],
+            "suddivisione": "S",
+            "votiGiudizi": false,
+            "scrutinioFinale": false
+          }
+        ]
+      }
+    ]
+  }
+}

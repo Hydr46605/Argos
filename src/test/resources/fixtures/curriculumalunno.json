@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "msg": null,
+  "data": {
+    "curriculum": [
+      {
+        "pkScheda": "9876",
+        "classe": "2A INFO",
+        "anno": 2024,
+        "esito": { "codEsito": "A", "desDescrizione": "Ammesso", "flgPositivo": "S", "tipoEsito": "A" },
+        "credito": 8.0,
+        "media": 7.4,
+        "mostraInfo": true,
+        "mostraCredito": false,
+        "isSuperiore": true
+      },
+      {
+        "pkScheda": "9876",
+        "classe": "3A INFO",
+        "anno": 2025,
+        "esito": { "codEsito": "A", "desDescrizione": "Ammesso", "flgPositivo": "S", "tipoEsito": "A" },
+        "credito": null,
+        "media": null,
+        "mostraInfo": true,
+        "mostraCredito": false,
+        "isSuperiore": true
+      }
+    ]
+  }
+}

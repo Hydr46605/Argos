@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "msg": null,
+  "data": {
+    "bachecaAlunno": [
+      {
+        "pk": "301",
+        "nomeFile": "pagella_primo_periodo.pdf",
+        "datEvento": "2026-01-31 14:00:00",
+        "messaggio": "Pagella primo periodo",
+        "data": "2026-01-31 14:00:00",
+        "isPresaVisione": true
+      }
+    ]
+  }
+}

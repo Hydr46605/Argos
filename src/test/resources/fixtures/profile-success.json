@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "msg": null,
+  "data": {
+    "anno": { "anno": "2025/2026", "dataInizio": "2025-09-11", "dataFine": "2026-06-30" },
+    "genitore": { "pk": "P1", "nominativo": "ROSSI ANNA", "desEMail": "anna.rossi@example.org" },
+    "alunno": {
+      "pk": "A1",
+      "nominativo": "ROSSI LUCA",
+      "nome": "LUCA",
+      "cognome": "ROSSI",
+      "isUltimaClasse": false,
+      "maggiorenne": false,
+      "desEmail": null
+    },
+    "scheda": {
+      "pk": "9876",
+      "classe": { "pk": "C1", "desDenominazione": "3A INFO", "desSezione": "A" },
+      "corso": { "pk": "K1", "descrizione": "Tecnico Informatica" },
+      "sede": { "pk": "S1", "descrizione": "Sede Centrale" },
+      "scuola": { "pk": "SC1", "descrizione": "IIS Esempio", "desOrdine": "TC" }
+    },
+    "resetPassword": false,
+    "ultimoCambioPwd": "2025-09-01 10:00:00",
+    "primoAccesso": false,
+    "profiloStorico": false,
+    "profiloDisabilitato": false,
+    "isSpid": false
+  }
+}

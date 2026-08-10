@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "msg": null,
+  "data": {
+    "isModificato": false,
+    "mostraPallino": false,
+    "differenzaSchede": false,
+    "forceLogin": false,
+    "pk": "9876",
+    "alunno": null
+  }
+}

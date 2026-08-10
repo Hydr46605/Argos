@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "msg": null,
+  "data": {
+    "utente": { "flgUtente": "F" },
+    "genitore": {
+      "desCognome": "ROSSI",
+      "desNome": "ANNA",
+      "desEMail": "anna.rossi@example.org",
+      "desCellulare": "333 000 0000",
+      "desTelefono": "02 000000",
+      "datNascita": "1980-04-12",
+      "flgSesso": "F"
+    },
+    "alunno": {
+      "cognome": "ROSSI",
+      "nome": "LUCA",
+      "nominativo": "ROSSI LUCA",
+      "desCf": "RSSLCA05T01H000X",
+      "sesso": "M",
+      "cittadinanza": "ITALIANA",
+      "datNascita": "2005-01-15",
+      "desComuneNascita": "MILANO",
+      "desComuneResidenza": "MILANO",
+      "desVia": "VIA ROMA 1",
+      "desCap": "20121",
+      "desEMail": "luca.rossi@example.org",
+      "desCellulare": "333 111 1111"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "success": true,
+  "msg": null,
+  "data": {
+    "dati": {
+      "1": [
+        {
+          "numOra": 1,
+          "mostra": true,
+          "materia": "MATEMATICA",
+          "docente": "ROSSI MARIO",
+          "desCognome": "ROSSI",
+          "desNome": "MARIO",
+          "pk": "701",
+          "ora": "08:00 - 09:00"
+        }
+      ],
+      "2": [
+        {
+          "numOra": 2,
+          "mostra": true,
+          "materia": "ITALIANO",
+          "docente": "BIANCHI LUIGI",
+          "desCognome": "BIANCHI",
+          "desNome": "LUIGI",
+          "pk": "702",
+          "ora": "09:00 - 10:00"
+        }
+      ]
+    }
+  }
+}

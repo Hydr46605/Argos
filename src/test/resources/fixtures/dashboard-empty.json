@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "msg": null,
+  "data": {
+    "dati": [
+      {
+        "mediaGenerale": null,
+        "mediaPerMese": {},
+        "mediaPerPeriodo": {},
+        "mediaMaterie": {},
+        "listaMaterie": [],
+        "listaPeriodi": [],
+        "voti": [],
+        "bacheca": [],
+        "bachecaAlunno": [],
+        "appello": [],
+        "registro": [],
+        "promemoria": [],
+        "fuoriClasse": [],
+        "prenotazioniAlunni": [],
+        "opzioni": [],
+        "rimuoviDatiLocali": "false",
+        "ricaricaDati": "false"
+      }
+    ]
+  }
+}

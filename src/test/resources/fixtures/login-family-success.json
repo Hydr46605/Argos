@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "msg": null,
+  "total": 1,
+  "data": [
+    {
+      "codMin": "SS13325",
+      "token": "x-auth-session-token",
+      "opzioni": [
+        { "chiave": "opz-vot_annuale", "valore": false },
+        { "chiave": "opz-arg_fnzioniavanzate", "valore": true }
+      ],
+      "isPrimoAccesso": false,
+      "profiloDisabilitato": false,
+      "isResetPassword": false,
+      "isSpid": false,
+      "username": "RSSLCA05T01"
+    }
+  ]
+}

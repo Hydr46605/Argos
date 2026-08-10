@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "msg": null,
+  "isPagOnlineAttivo": "true",
+  "data": [
+    {
+      "rata": "Rata 1",
+      "descrizione": "Contributo scolastico",
+      "debitore": "ROSSI LUCA",
+      "iuv": "IUV-0001",
+      "stato": "Pagato",
+      "importoPrevisto": "50,00",
+      "importoPagato": "50,00",
+      "dataPagamento": "2025-10-01 12:00:00",
+      "isPagoOnLine": true,
+      "rtPresent": true,
+      "listaSingoliPagamenti": [
+        { "importoTassa": "50,00", "importoPrevisto": "50,00", "descrizione": "Contributo" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "msg": null,
+  "data": {
+    "disponibilita": {
+      "9001": [
+        {
+          "pk": "R1",
+          "desNota": "Colloquio generale",
+          "datDisponibilita": "2026-04-10 00:00:00",
+          "oraInizio": "16:00",
+          "oraFine": "17:00",
+          "desLuogoRicevimento": "Aula 12",
+          "numMax": 8,
+          "numPrenotazioni": 2,
+          "docente": { "pk": "9001", "desCognome": "ROSSI", "desNome": "MARIO", "desEMail": "m.rossi@example.org" }
+        }
+      ]
+    },
+    "genitoreOAlunno": [
+      { "pk": "P1", "nominativo": "ROSSI ANNA", "desEMail": "anna.rossi@example.org" }
+    ],
+    "tipoAccesso": "F",
+    "prenotazioni": []
+  }
+}

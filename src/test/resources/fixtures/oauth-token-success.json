@@ -1,0 +1,7 @@
+{
+  "access_token": "at-secret-123",
+  "refresh_token": "rt-secret-456",
+  "expires_in": 3600,
+  "scope": "openid offline profile user.roles argo",
+  "token_type": "Bearer"
+}

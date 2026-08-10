@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "msg": null,
+  "data": {
+    "bacheca": [
+      {
+        "pk": "201",
+        "categoria": "CIRCOLARI",
+        "messaggio": "<p>Uscita didattica al planetario</p>",
+        "data": "2026-03-01 08:00:00",
+        "autore": "PROF BIANCHI",
+        "pvRichiesta": true,
+        "isPresaVisione": false,
+        "listaAllegati": [
+          { "pk": "A1", "nomeFile": "autorizzazione.pdf", "path": "/uploads/autorizzazione.pdf" }
+        ]
+      },
+      {
+        "pk": "202",
+        "categoria": "COMUNICAZIONI",
+        "messaggio": "Colloqui generali",
+        "data": "2026-02-20 10:00:00",
+        "autore": "SEGRETERIA",
+        "listaAllegati": []
+      }
+    ]
+  }
+}
