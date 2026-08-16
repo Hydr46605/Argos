@@ -1,0 +1,13 @@
+# Copy this file to `local-test.properties` (gitignored) and fill in YOUR OWN
+# credentials to run the live integration test against the real Argo endpoints:
+#
+#   cp local-test.properties.example local-test.properties
+#   ./gradlew integrationTest
+#
+# The file is never committed, never printed, and the test prints only
+# sanitized summaries (no tokens, no passwords). Environment variables
+# ARGO_TEST_SCHOOL_CODE / ARGO_TEST_USERNAME / ARGO_TEST_PASSWORD work as an
+# alternative when a properties file is not desired.
+argo.test.schoolCode=
+argo.test.username=
+argo.test.password=

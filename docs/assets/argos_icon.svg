@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Argos icon: minimalist Material "smart_toy"-style glyph on a dark rounded square.
+       A guardian/technical node: a socketed head with two dot eyes. -->
+  <rect width="48" height="48" rx="12" fill="#1f2430"/>
+  <g fill="#e8eaf0">
+    <rect x="12" y="12" width="24" height="24" rx="6"/>
+  </g>
+  <g fill="#1f2430">
+    <circle cx="20" cy="22" r="2.2"/>
+    <circle cx="28" cy="22" r="2.2"/>
+  </g>
+  <path d="M20 29 h8" stroke="#1f2430" stroke-width="2" stroke-linecap="round"/>
+</svg>
