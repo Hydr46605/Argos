@@ -1,0 +1,64 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Cut CalVer release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Validate the wrapper checksum
+        uses: gradle/wrapper-validation-action@v3
+
+      - name: Assert tag matches the project version
+        run: |
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          PROJECT_VERSION="$(grep '^version=' gradle.properties | cut -d= -f2)"
+          if [ "$TAG_VERSION" != "$PROJECT_VERSION" ]; then
+            echo "Tag v${TAG_VERSION} does not match project version ${PROJECT_VERSION}" >&2
+            exit 1
+          fi
+
+      - name: Run the release gate (format, detekt, tests, changelog validation)
+        run: ./gradlew verifyAll releaseCheck --stacktrace
+
+      - name: Assemble artifacts
+        run: ./gradlew jar sourcesJar
+
+      - name: Publish artifacts to the local build directory
+        run: |
+          mkdir -p build/distributions
+          cp build/libs/*.jar build/distributions/
+          ls -la build/distributions/
+
+      - name: Create the GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ github.ref_name }}
+          body: |
+            ## Argos ${{ github.ref_name }}
+
+            See the [changelog](https://github.com/Hydr46605/Argos/blob/${{ github.ref_name }}/CHANGELOG.md#${{ github.ref_name }}) for this release.
+
+            > **Stability warning:** this library relies on undocumented Argo APIs and is intended for personal, local, non-commercial use. Users are responsible for complying with Argo's Terms of Service.
+          files: |
+            build/distributions/*.jar
+          generate_release_notes: true
