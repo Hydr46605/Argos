@@ -103,7 +103,7 @@ Tutte le modifiche rilevanti ad Argos sono documentate qui, seguendo [Keep a Cha
 - Package `it.hydr4.argo.util` con `RetryPolicy` (backoff esponenziale per il transport instabile), `ArgoVersion` (introspezione dell'artefatto a runtime) e `Redactor` (fonte unica per la renderizzazione sicura delle credenziali).
 - Package `it.hydr4.argo.annotations` con i marcatori di stabilità `@Beta` / `@Experimental` sulla wire surface meno stabile (`pcto`, `corsirecupero`).
 - Source set `example` dedicato. Gli esempi eseguibili non finiscono più nel jar, e `AdvancedUsage` copre ripristino, sync con sonda di cambiamento, retry e introspezione versione (`./gradlew runExample -PexampleRun`).
-- Preparazione Maven Central. Repository di staging OSSRH, firma PGP protetta e un task `publishToMavenCentral` che valida le credenziali (nessuna pubblicazione per ora).
+- Pubblicazione via JitPack, con `withSourcesJar()` e `withJavadocJar()`.
 - Nuove fixture sanificate e test dei repository per orario, scrutinio, tasse, ricevimenti, storico bacheca, link allegati, pcto, corsi di recupero, curriculum e dettagli profilo (115 test totali).
 - `justfile` che replica i passi della CI (`just verify`, `just format`, `just release`).
 
